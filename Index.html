@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshay - Developer Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Condensed&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 1rem 2rem;
+      background-color: #141218e0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    nav .left {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+      color: #00ffcc;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.125rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section {
+      margin-top: 3rem;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #00ffcc;
+      text-align: center;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .skills-list div {
+      background-color: #29243d;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      background-color: #141218e0;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #ccc;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    .footer-links {
+      margin-top: 0.5rem;
+    }
+
+    .footer-links a {
+      color: #00ffcc;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav .left {
+        margin-bottom: 1rem;
+      }
+
+      .intro h1 {
+        font-size: 2rem;
+      }
+
+      .intro p {
+        font-size: 1rem;
+      }
+
+      .section h2 {
+        font-size: 1.5rem;
+      }
+
+      .skills-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .skills-list {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-links a {
+        display: inline-block;
+        margin: 0.25rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Akshay Pratap Singh</div>
+      <div class="right">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1>Hello, I'm Akshay 👋</h1>
+      <p>A passionate Web Developer and Cloud Enthusiast, focused on creating seamless web applications and exploring scalable cloud-native solutions. Let’s build something amazing together!</p>
+    </section>
+
+    <section class="section">
+      <h2>Web Development Skills</h2>
+      <div class="skills-list">
+        <div>HTML5 / CSS3</div>
+        <div>JavaScript / ES6+</div>
+        <div>React.js / Next.js</div>
+        <div>Node.js / Express</div>
+        <div>Tailwind CSS / Bootstrap</div>
+        <div>MongoDB / MySQL</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Cloud Skills</h2>
+      <div class="skills-list">
+        <div>AWS EC2 / S3 / Lambda</div>
+        <div>Docker / Kubernetes</div>
+        <div>CI/CD with GitHub Actions</div>
+        <div>Firebase / Vercel</div>
+        <div>Serverless Architecture</div>
+        <div>Monitoring & Logging</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Akshay Pratap Singh. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/akshay-pratap-singh-a309b8250/">LinkedIn</a>
+      <a href="https://github.com/Akshayconqurers">GitHub</a>
+      <a href="https://www.instagram.com/akshay_pratap_singh_7800/">Instagram</a>
+      <a href="akshayprince7800@gmail.com">Email</a>
+    </div>
+  </footer>
+</body>
+
+</html>
+// Created on 14 April'25
